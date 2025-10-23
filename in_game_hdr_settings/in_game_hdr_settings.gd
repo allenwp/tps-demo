@@ -54,6 +54,12 @@ func _process(_delta: float) -> void:
 	if Input.is_action_just_pressed("toggle_hdr"):
 		window.hdr_output_requested = !window.hdr_output_requested
 	
+	if Input.is_action_just_pressed("toggle_cursor"):
+		if Input.get_mouse_mode() == Input.MOUSE_MODE_VISIBLE:
+			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+		else:
+			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+	
 	%HDRCheckButton.disabled = !hdr_supported
 #
 	var hdr_output_requested: bool = window.hdr_output_requested

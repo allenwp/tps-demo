@@ -162,6 +162,11 @@ script = ExtResource("9")
 offset_top = 127.0
 offset_bottom = 352.0
 
+[node name="Label2" type="Label" parent="InGameHDRSettings" unique_id=930126888]
+layout_mode = 2
+text = "Press H to toggle HDR
+Press M to toggle mouse cursor"
+
 [node name="Camera3D" type="Camera3D" parent="." unique_id=36189717]
 transform = Transform3D(0.671837, 0, -0.740699, 0, 1, 0, 0.740699, 0, 0.671837, -4.05309, -1.12911, 4)
 current = true
