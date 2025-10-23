@@ -37,7 +37,7 @@ var aiming_timer := 0.0
 func _ready():
 	if get_multiplayer_authority() == multiplayer.get_unique_id():
 		camera_camera.make_current()
-		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+		#Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	else:
 		set_process(false)
 		set_process_input(false)
